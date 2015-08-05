@@ -30,7 +30,7 @@ B="${S}"
 inherit cmake
 
 EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release -DCMAKE_EXE_LINKER_FLAGS='-Wl,--no-as-needed'"
-EXTRA_OECMAKE += "${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '-DBUUILD_WAYLAND=1', '', d)}"
+EXTRA_OECMAKE += "${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '-DBUILD_WAYLAND=1', '', d)}"
 
 CFLAGS_append = " -fPIC"
 
