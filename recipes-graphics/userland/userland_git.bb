@@ -22,6 +22,7 @@ SRC_URI = "git://github.com/${SRCFORK}/userland.git;protocol=git;branch=${SRCBRA
            file://0001-Allow-applications-to-set-next-resource-handle.patch \
            file://0002-wayland-Add-support-for-the-Wayland-winsys.patch \
            file://0004-Fix-include-path.patch \
+           file://0006-fix-wayland-egl-dependencies-not-found.patch \
 "
 
 S = "${WORKDIR}/git"
