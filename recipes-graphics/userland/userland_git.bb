@@ -8,7 +8,8 @@ LIC_FILES_CHKSUM = "file://LICENCE;md5=957f6640d5e2d2acfce73a36a56cb32f"
 PR = "r6"
 
 PROVIDES = "virtual/libgles2 \
-            virtual/egl"
+            virtual/egl \
+            virtual/wayland-egl"
 COMPATIBLE_MACHINE = "raspberrypi"
 
 SRCBRANCH = "master"
